@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Integrates nochex.com's redirected payment service.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function uc_nochex_help($route_name, RouteMatchInterface $route_match) {
+
+}
+
+/**
+ * Implements hook_ucga_display().
+ */
+function uc_nochex_ucga_display() {
+  if (arg(0) == 'cart' && arg(1) == 'nochex' && arg(2) == 'complete') {
+    return TRUE;
+  }
+}

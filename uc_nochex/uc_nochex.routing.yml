@@ -1,0 +1,21 @@
+uc_nochex.complete:
+  path: '/cart/nochex/complete'
+  defaults:
+    _controller: '\Drupal\uc_nochex\Controller\NochexController::complete'
+    _title: 'Order Complete'
+  requirements:
+    _permission: 'access content'
+uc_nochex.apc:
+  path: '/cart/nochex/apc'
+  defaults:
+    _controller: '\Drupal\uc_nochex\Controller\NochexController::apc'
+    _title: 'APC'
+  requirements:
+    _permission: 'access content'
+uc_nochex.cancel:
+  path: '/cart/nochex/cancel'
+  defaults:
+    _controller: '\Drupal\uc_nochex\Controller\NochexController::cancel'
+    _title: 'Order Cancelled'
+  requirements:
+    _permission: 'access content'
