@@ -31,7 +31,7 @@ class Nochex extends PaymentMethodPluginBase implements OffsitePaymentMethodPlug
     );
     $build['image'] = array(
       '#theme' => 'image',
-      '#uri' => 'https://www.nochex.com/logobase-secure-images/logobase-banners/clear-amex-mp.png',
+      '#uri' => 'https://www.nochex.com/logobase-secure-images/logobase-banners/clear.png',
       '#alt' => $this->t('Nochex APC Module'),
       '#attributes' => array('style' => 'max-width:250px;"'),
     );
